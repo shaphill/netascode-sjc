@@ -1,0 +1,13 @@
+---
+vxlan:
+  fabric:
+    name: MTV-nac
+    type: VXLAN_EVPN
+  global:
+    bgp_asn: "65010"
+    ntp_servers:
+      - ip_address: 10.16.245.11
+        vrf: management
+    ptp:
+      enable: true
+

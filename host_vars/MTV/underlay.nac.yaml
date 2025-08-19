@@ -1,0 +1,10 @@
+---
+vxlan:
+  underlay:
+    ipv4:
+      fabric_interface_numbering: p2p
+      subnet_mask: 30
+      underlay_routing_loopback_ip_range: "10.5.0.0/22"
+      underlay_vtep_loopback_ip_range: "10.6.0.0/22"
+      underlay_rp_loopback_ip_range: "10.254.253.0/24"
+      underlay_subnet_ip_range: "10.7.0.0/16"
