@@ -1,0 +1,34 @@
+---
+vxlan:
+  topology:
+    switches:
+      - name: mtv-leaf1
+        serial_number: FLM281508AU
+        role: leaf
+        management:
+          management_ipv4_address: 10.16.246.102
+          default_gateway_v4: 10.16.246.1
+      - name: mtv-leaf2
+        serial_number: FLM281605RU
+        role: leaf
+        management:
+          management_ipv4_address: 10.16.246.103
+          default_gateway_v4: 10.16.246.1
+      - name: mtv-leaf3
+        serial_number: FLM281601HV
+        role: leaf
+        management:
+          management_ipv4_address: 10.16.246.106
+          default_gateway_v4: 10.16.246.1
+      - name: mtv-spine1
+        serial_number: FDO28120WFC
+        role: border_gateway_spine
+        management:
+          management_ipv4_address: 10.16.246.100
+          default_gateway_v4: 10.16.246.1
+      - name: mtv-spine2
+        serial_number: FDO28120WG0
+        role: border_gateway_spine
+        management:
+          management_ipv4_address: 10.16.246.101
+          default_gateway_v4: 10.16.246.1

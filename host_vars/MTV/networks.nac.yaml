@@ -1,0 +1,21 @@
+---
+vxlan:
+  overlay:
+    networks:
+      - name: demo_vlan_1001
+        
+        
+    network_attach_groups:
+      - name: demo_servers
+        switches:
+          - hostname: mtv-leaf1
+            ports: 
+              - Ethernet1/41
+              - Ethernet1/42
+          - hostname: mtv-leaf2
+            ports:
+              - Ethernet1/41
+              - Ethernet1/42
+          - hostname: mtv-leaf3
+            ports: 
+              - Ethernet1/41

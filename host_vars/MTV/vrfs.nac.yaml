@@ -1,0 +1,22 @@
+---
+vxlan:
+  overlay:
+    vrfs:
+      - name: demo_vrf
+        vrf_id: 1000
+        vlan_id: 1000
+        vrf_attach_group: all
+      - name: hr
+        vrf_id: 50002
+        vlan_id: 2000
+        vrf_attach_group: all
+      - name: prod
+        vrf_id: 50000
+        vlan_id: 2001
+        vrf_attach_group: all
+    vrf_attach_groups:
+      - name: all
+        switches:
+          - hostname: mtv-leaf1
+          - hostname: mtv-leaf2
+          - hostname: mtv-leaf3
